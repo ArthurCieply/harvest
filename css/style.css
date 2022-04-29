@@ -1,0 +1,1498 @@
+/*  FIX NAV     */
+ul.line-nav-tabs li:nth-of-type(1):after {
+    width: 0%;
+}
+
+
+/*-- -------------------------- -->
+<---         Landing            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #hero {
+        font-size: inherit;
+        height: 93vh;
+        min-height: fit-content;
+        position: relative;
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 2.2em;
+        color: var(--herowhite);
+        text-align: center;
+        line-height: 1.2em;
+        margin: 18vh auto auto auto;
+        width: 100%;
+        max-width: 20em;
+        z-index: 3;
+        position: relative;
+    }
+
+    #hero p {
+        font-size: 1.3em;
+        line-height: 1.3em;
+        color: var(--herowhite);
+        text-align: center;
+        margin: 5vh auto 5vh auto;
+        width: 100%;
+        max-width: 20em;
+        z-index: 3;
+        position: relative;
+    }
+
+    #hero .button-solid {
+        position: relative;
+        margin: auto auto auto auto;
+        text-align: center;
+        width: 8.95em;
+        z-index: 3;
+        display: block;
+
+        
+        /*background:linear-gradient(to bottom, var(--primarybutton) 100%, var(--harvest) 100%);*/
+    }
+
+}
+
+/*  Thin Wide Thin Window   */
+@media only screen and (min-width: 480px) and (max-width: 608px) {
+    #hero {
+        padding-bottom: 0px;/*
+        margin-bottom: 0px;*/
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #hero {
+        font-size: inherit;
+        height: 110vh;
+        width: 100vw;/*
+        position: absolute;*/
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 130vh;
+        width: 100vw;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 130vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 36px;
+        margin: 16vh auto auto auto;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+        max-width: 20em;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #hero {
+        height: 80vh;
+        width: 100%;
+        margin-bottom: 9em;
+    }
+
+    #hero:before {
+        height: 102vh;
+        width: 100vw;
+    }
+
+    #hero picture img {
+        width: 100vw;
+        height: 102vh;
+    }
+
+    #hero h1 {
+        font-size: 3.5em;
+        margin: 16vh auto auto auto;
+        line-height: 1.5em;
+        margin: 25vh auto auto auto;
+        max-width: 13em;
+    }
+
+    #hero p {
+        font-size: 1.6em;
+        line-height: 1.5em;
+        margin: 3vh auto 4vh auto;
+        width: 100%;
+        max-width: 20em;
+    }
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #hero {
+        height: 80vh;
+        width: 100%;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+
+    #hero {
+        height: 80vh;
+        width: 100%;
+    }
+
+    #hero:before {
+        height: 102vh;
+        width: 100vw;
+    }
+
+    #hero picture img {
+        width: 100vw;
+        height: 102vh;
+    }
+
+    #hero h1 {
+        font-size: 3.75em;
+        line-height: 1.5em;
+        max-width: 15em;
+    }
+
+    #hero p {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin: 3vh auto 3vh auto;
+        width: 100%;
+        max-width: 22em;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---         Services            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #services {
+        position: relative;
+        z-index: 100;
+        padding: 50px 10px 0 10px;
+        margin-bottom: -90px;
+        height: fit-content;
+    }
+
+    #services .floating-cards {
+        width: 100%;
+        border-radius: 5px;
+        margin: auto;
+        transform: translateY(-100px);
+    }
+
+    #services .floating-cards .card {
+        border-radius: 5px;
+        background: var(--primary);
+        padding: 30px;
+        margin: auto;
+        margin-bottom: 8px;
+
+
+        height: fit-content;
+    }
+
+    #services .floating-cards .card:nth-of-type(1) {
+        box-shadow: 0px 10px 15px -1px rgb(14, 0, 0);
+    }
+
+    #services .floating-cards .card:nth-of-type(2) {
+        box-shadow: 0px 10px 15px -1px rgb(14, 0, 0);
+    }
+
+    #services .floating-cards .card:nth-of-type(3) {
+        box-shadow: 0px 10px 15px -1px rgb(14, 0, 0);
+    }
+
+    #services .floating-cards .card h3 {
+        color: var(--bledwhitebright);
+        font-size: 20px;
+    }
+
+    #services .svg {
+        margin-right: 10px;
+    }
+
+    #services .floating-cards .card p {
+        color: var(--bledwhitedark);
+        position: relative;
+        font-size: 20px;
+        line-height: 1.5em;
+        margin-bottom: 0px;
+    }
+
+    #services .floating-cards .card a {
+        color: var(--bledwhitedark);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5em;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+        padding-top: 10px;
+    }
+
+    #services .floating-cards a img {
+        display: inline-block;
+        width: 30px;
+        margin-left: 5px;
+    }
+
+    #services .floating-cards .card:nth-of-type(2) {
+        background: var(--harvest);
+    }
+    
+    #services .floating-cards .card:nth-of-type(3), #services .floating-cards .card:nth-of-type(3) h3, #services .floating-cards .card:nth-of-type(3) p, #services .floating-cards .card:nth-of-type(3) a {
+        background: #780202;
+        color: #ded2d2;
+    }
+
+
+}
+
+/*  Thin Wide Thin Window   */
+@media only screen and (min-width: 480px) and (max-width: 608px) {
+
+
+    
+    #services {
+        max-height: 300px;
+    }
+
+    #services .floating-cards {
+        width: 100%;
+        border-radius: 5px;
+        margin: auto;
+        transform: translateY(-80px);
+        display: inline-grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    #services .floating-cards .card {
+        position: relative;
+        border-radius: 5px;
+        background: var(--primary);
+        padding: 20px 15px;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 8px;
+
+        box-shadow: 0px 5px 15px -1px rgb(14, 0, 0);
+    }
+
+    #services .floating-cards .card:nth-of-type(2) {
+        max-height: 250px;
+        transform: translateY(-13px) scale(1.075);
+        box-shadow: 0px 15px 15px -1px rgb(14, 0, 0) !important;
+        z-index: 5;
+    }
+
+    #services .floating-cards .card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    #services .floating-cards .card p {
+        position: relative;
+
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+
+    #services .floating-cards .card p {
+        font-size: 18px;
+        line-height: 1.3em;
+        margin-bottom: 30px;
+    }
+
+    #services .floating-cards .card:nth-of-type(2) p {
+        margin-bottom: 0px;
+    }
+
+    #services .floating-cards .card a {
+        color: var(--bledwhitedark);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5em;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: auto;
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #services .floating-cards .card .menulink:hover {   /*   IDK why its not working   */
+        text-decoration: underline !important;
+    }
+
+    #services .floating-cards .card .menulink:active {
+        text-decoration: underline !important;
+    }
+
+    #services .floating-cards .card:nth-of-type(2) a {
+        padding-top: 5px;
+    }
+
+    #services .floating-cards a img {
+        display: inline-block;
+        width: 30px;
+        margin-left: 5px;
+    }
+
+
+    #services .floating-cards .card:nth-of-type(1),
+    #services .floating-cards .card:nth-of-type(3) {
+        max-height: 260px;
+    }
+
+    #services .floating-cards .card:nth-of-type(1) p,
+    #services .floating-cards .card:nth-of-type(3) p {
+        margin-bottom: 0px;
+    }    
+
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #services {
+        max-height: 300px;
+    }
+
+    #services .floating-cards {
+        width: 100%;
+        border-radius: 5px;
+        margin: auto;
+        transform: translateY(-80px);
+        display: inline-grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    #services .floating-cards .card {
+        position: relative;
+        border-radius: 5px;
+        background: var(--primary);
+        padding: 20px 15px;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 8px;
+
+        box-shadow: 0px 5px 15px -1px rgb(14, 0, 0);
+    }
+
+    #services .floating-cards .card:nth-of-type(2) {
+        max-height: 250px;
+        transform: translateY(-13px) scale(1.075);
+        box-shadow: 0px 15px 15px -1px rgb(14, 0, 0) !important;
+        z-index: 5;
+    }
+
+    #services .floating-cards .card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    #services .floating-cards .card p {
+        position: relative;
+
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+
+    #services .floating-cards .card p {
+        font-size: 18px;
+        line-height: 1.3em;
+        margin-bottom: 30px;
+    }
+
+    #services .floating-cards .card:nth-of-type(2) p {
+        margin-bottom: 0px;
+    }
+
+    #services .floating-cards .card a {
+        color: var(--bledwhitedark);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5em;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: auto;
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #services .floating-cards .card:nth-of-type(2) a {
+        padding-top: 5px;
+    }
+
+    #services .floating-cards a img {
+        display: inline-block;
+        width: 30px;
+        margin-left: 5px;
+    }
+
+}
+
+/*  Funky Resize   */
+@media only screen and (min-width: 480px) and (max-width: 560px) {
+
+    #serices .floating-cards .card {
+        min-height: fit-content !important;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #services {
+        max-height: 300px;
+    }
+
+    #services .floating-cards {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 5px;
+        margin: auto;
+        transform: translateY(-80px);
+        display: inline-grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    #services .floating-cards .card {
+        position: relative;
+        border-radius: 5px;
+        background: var(--primary);
+        padding: 20px 15px;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 8px;
+
+        box-shadow: 0px 5px 15px -1px rgb(14, 0, 0);
+    }
+
+    #services .floating-cards .card:nth-of-type(2) {
+        max-height: 250px;
+        transform: translateY(-13px) scale(1.075);
+        box-shadow: 0px 15px 15px -1px rgb(14, 0, 0) !important;
+        z-index: 5;
+    }
+
+    #services .floating-cards .card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+
+    }
+
+    #services .floating-cards .card p {
+        position: relative;
+
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #services .floating-cards {
+        position: relative;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #services {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 950px;
+    }
+
+    #services .floating-cards {
+        /*max-width: 70%;*/
+        max-width: 930px;
+        width: 930px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #services {
+        width: 1150px;
+    }
+
+    #services .floating-cards {
+        /*max-width: 70%;*/
+        max-width: 1130px;
+        width: 1130px;
+    }
+}
+
+/* Xtra Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #services {
+        width: 1350px;
+    }
+
+    #services .floating-cards {
+        /*max-width: 70%;*/
+        max-width: 1330px;
+        width: 1330px;
+    }
+}
+
+/*-- -------------------------- -->
+<---          About             -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #about {
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        overflow: hidden;
+        padding: 40px 0px 35px 0px;
+    }
+    
+    #about h2 {
+        padding: 0 20px;
+        font-size: 36px;
+        position: relative;
+        text-align: center;
+
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    #about h2:before, #about h2:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--harvest);
+    }
+
+    #about h2:after {
+        transform: translateX(8%);
+    }
+
+    #about h2:before {
+        margin-left: -52%;
+        text-align: right;
+    }
+
+
+    #about hr {
+        border: none;
+        border-top: 2px solid var(--harvest);
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+                
+        display: none;
+    }
+
+    #about p {
+        padding: 10px 0px;
+        font-weight: 500;
+        font-size: 19px;
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #about p {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 0px 0px 35px 0px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #about h2 {
+        font-size: 42px;
+    }
+
+    #about p {
+        font-size: 22px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #about h2 {
+        font-size: 46px;
+    }
+
+    #about p {
+        font-size: 24px;
+        margin: auto 5vw auto 5vw;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+}
+
+/*-- -------------------------- -->
+<---           Menu             -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+    
+    #menu {
+        padding: 0px 0px 0px;
+    }
+
+    #menu h2 {
+        font-size: 36px;
+        color: var(--primaryblack);
+        margin-bottom: 36px;
+    }
+
+    #menu h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu h3 .line {
+        width: 40vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 6px;
+        margin-right: 12px;
+    }
+
+    #menu h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #menu p {
+        margin-bottom: 36px;
+    }
+
+    #menu .container2 img {
+        display: block;
+        margin: 50px auto;
+        width: 100%;
+    }
+
+    #menu .button-solid {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #menu {
+        padding: 0px 25px 0px 25px;
+    }
+
+    #menu h3 .line {
+        width: 55vw;
+    }
+
+    #menu .container2 img {
+        display: block;
+        margin: 50px auto;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    #menu .tall-pizza {
+        display: none !important;
+    }
+
+    #menu .wide-pizza {
+        display: block !important;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #menu {
+        padding: 0px 25px 0px 25px;
+    }
+    
+    #menu h2 {
+        font-size: 42px;
+        color: var(--primaryblack);
+        margin-bottom: 36px;
+    }
+
+    #menu h3 {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu h3 .line {
+        width: 80px;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    #menu h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    #menu p {
+        font-size: 22px;
+        margin-bottom: 36px;
+    }
+
+    #menu h3 .line {
+        width: 55vw;
+    }
+
+    #menu .tall-pizza {
+        display: none !important;
+    }
+
+    #menu .wide-pizza {
+        display: block !important;
+        max-width: 600px;
+    }
+
+    #menu .container2 img {
+        display: block;
+        margin: 30px auto;
+        width: 95%;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #menu h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    #menu p {
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+    #menu h3 .line {
+        width: 73vw;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+}
+
+/*-- -------------------------- -->
+<---        Testimonials        -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #reviews {
+        font-size: inherit;
+        height: fit-content;
+        position: relative;
+        top: 0;
+        padding: 0;
+    }
+
+    #reviews:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: .80;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #reviews picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    #reviews .top {
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 3;
+    }
+
+    #reviews .container {
+        position: relative;
+        padding: 50px 10px;
+    }
+
+    #reviews h2 {
+        position: relative;
+        z-index: 3;
+        color: var(--testimonialwhite);
+        font-size: 36px;
+        line-height: 44px;
+        width: 80vw;
+        max-width: 406px;
+        margin: auto auto auto auto;
+        text-align: center;
+    }
+
+    #reviews .ratings {
+        position: relative;
+        max-width: 95vw;
+        margin: 25px auto auto auto;
+        text-align: center;
+    }    
+    
+    #reviews .ratings .stars {
+        background: var(--testimonialwhite);
+        height: 51px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 24px;
+        border-radius: 26px;
+        margin-bottom: 16px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .ratings .stars span {
+        margin-left: 5px;
+        font-size: 20px;
+        color: var(--primaryblack);
+        font-weight: 700;
+    }
+
+    #reviews .ratings .link {
+        position: relative;
+        z-index: 3;
+        color: var(--testimonialwhite);
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;        
+    }
+
+    #reviews .ratings .link a {
+        text-decoration: underline;
+    }
+
+    #reviews .ratings .stars img {
+        display: inline-block;
+        width: 24px;
+    }
+
+    #reviews .review-top .star-group img {
+        display: inline-block;
+        width: 18px;
+        margin-right: 3px;
+    }
+
+    #reviews .container:nth-of-type(1) {
+        padding-bottom: 0px;
+    }
+
+    #reviews .container:nth-of-type(2) {
+        padding-top: 10px;
+    }
+
+    
+    #reviews .review {
+        position: relative;
+        z-index: 3;
+        background: var(--testimonialwhite);
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 87vw;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .review-top {
+        position: relative;
+        /*padding-left: 52px;*/
+    }
+
+    #reviews .review-top .picture {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    #reviews .review .name {
+        color: var(--primaryblack);
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 8px;
+    }
+
+    #reviews .review-top .star-group span.value {
+        font-size: 20px;
+        color: var(--primaryblack);
+        margin-top: 2px;
+        margin-left: 8px;
+    }
+    
+    #reviews .review-top .star-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 24px;
+    }
+
+    #reviews .review-top .star_group img {
+        margin-right: 3px;
+        display: inline-block;
+    }
+
+    #reviews .review-top .star_group img:last-of-type {
+        margin-right: 0;
+    }
+
+    #reviews p {
+        color: var(--primaryblack);
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+
+
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #reviews h2 {
+        font-size: 42px;
+    }
+
+    #reviews .ratings .stars span {
+        font-size: 22px;
+    }
+
+    #reviews .ratings .link {
+        font-size: 22px;
+        text-align: center;
+        display: inline-block;
+        width: 50vw;
+        white-space: nowrap;
+    }
+
+    #reviews .ratings .hyper {
+        width: fit-content;
+    }
+
+    #reviews .review {
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 60vw;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .review .name {
+        font-size: 22px;
+    }
+
+    #reviews .review-top .star-group span.value { 
+        font-size: 22px;
+    }
+
+    #reviews p {
+        font-size: 20px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #reviews h2 {
+        font-size: 42px;
+    }
+
+    #reviews .ratings .stars span {
+        margin-left: 0px;
+        font-size: 22px;
+    }
+
+    #reviews .ratings .link {
+        font-size: 22px;
+        text-align: center;
+        display: inline-block;
+        width: 50vw;
+        white-space: nowrap;
+    }
+
+    #reviews .ratings .hyper {
+        width: fit-content;
+    }
+
+    #reviews .review {
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 60vw;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .review .name {
+        font-size: 22px;
+    }
+
+    #reviews .review-top .star-group span.value { 
+        font-size: 22px;
+    }
+
+    #reviews p {
+        font-size: 20px;
+    }
+
+    /*#reviews .ratings .stars {
+        max-width: 550px;
+    }*/
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #reviews {
+        padding: 5% 0 10% 0;
+        background-attachment: fixed;
+    }
+
+    #reviews .review {
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 55vw;
+        max-width: none;/*360px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+        padding-right: 5%;
+    }
+
+    #reviews .ratings .link {
+        text-align: right;
+        padding-right: 15%;
+    }
+
+    #reviews h2 {
+        padding-left: 5%;
+        font-size: 44px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+    }
+
+    #reviews .container-2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 15px;
+        padding: 0 5% 0 5%;
+    }
+
+    #reviews .review {
+        flex: auto; 
+        gap: 10px;
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 340px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #reviews .ratings {
+        max-width: 45vw;
+    }
+
+    #reviews .ratings .stars {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 35vw;
+    }
+
+    
+    #reviews .ratings .stars img {
+        display: inline-block;
+        width: 34px;
+    }
+
+    #reviews .ratings .stars span {
+        font-size: 24px;
+    }
+
+    #reviews .ratings .facebook-link {
+        font-size: 24px;
+    }
+
+    #reviews .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    #reviews .review-top .star-group img {
+        width: 30px;
+        padding-left: 2px;
+    }
+
+    #reviews .review .name {
+        font-size: 24px;
+        padding-left: 5px;
+    }
+
+    #reviews .review-top .value {
+        font-size: 24px;
+    }
+
+
+    /*#reviews .ratings .stars {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 24px;
+        border-radius: 26px;
+        margin-bottom: 16px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+
+    #reviews .review-top .star-group span.value {
+        font-size: 22px;
+        margin-left: 2px;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #reviews {
+        padding: 5% 5% 10% 5%;
+        background-attachment: fixed;
+    }
+
+    #reviews h2 {
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+        max-width: 40vw;
+    }
+
+    #reviews .ratings {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    #reviews .ratings .stars {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 400px;
+    }
+
+    #reviews .ratings .link {
+        text-align: right;
+        max-width: 400px;
+        padding-right: 0%;
+    }
+
+    #reviews .container2 {
+        gap: 0;
+        padding: 0 20% 0 20%;
+        justify-content: space-between;
+    }
+    
+    /*#reviews .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }*/
+
+    #reviews .review {
+        width: 100%;
+        max-width: 360px;
+        margin: 0;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+    #cta {
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #cta h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+
+    #cta p {
+        font-size: 20px;
+        line-height: 1.5em;
+        margin-bottom: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #cta .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    #cta h2 {
+        font-size: 42px;
+        text-align: left;
+        width: 65vw;
+        max-width: 50vw;
+        margin-left: 5.1635vw;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #cta p {
+        font-size: 20px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+    }
+
+    #cta .button-solid {
+        align-self: center;
+        height: 55px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+}

@@ -1,0 +1,300 @@
+/*  FIX NAV     */
+ul.line-nav-tabs li:nth-of-type(4):after {
+    width: 0%;
+}
+
+.menu-btn__burger {
+    background: var(--primaryblack);
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    background: var(--primaryblack);
+}
+
+ul.line-nav-tabs li a {
+    color: var(--primaryblack);
+}
+
+/*-- -------------------------- -->
+<---          Hero              -->
+--- -------------------------- -*/
+
+
+@media only screen and (min-width: 0em) {
+
+    #main {
+        margin: 0px;
+    }
+
+    #hero {
+        background: url(../images/harvest-map.jpg);
+        background-color: #E8E8E8;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 70px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #hero .contact-info {
+        background: var(--harvest);
+        padding: 36px;
+        margin: 16px;
+        max-width: 365px;
+    }
+
+    #hero .contact-info h2 {
+        font-size: 20px;
+        color: var(--bledwhitebright);
+        font-weight: bold;
+    }
+
+    #hero .contact-info a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: var(--bledwhitedark);
+        text-align: left;
+        line-height: 1.5em;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #hero .contact-info a:nth-of-type(2) {
+        align-items: flex-start;
+        max-width: 249px;
+    }
+
+    #hero .contact-info a:nth-of-type(2) img {
+        margin-top: 3px;
+    }
+
+    #hero .contact-info span {
+        color: var(--bledwhitedark);
+        display: block;
+    }
+
+    #hero .contact-info a img {
+        display: inline-block;
+        width: 20px;
+        margin-right: 16px;
+    }
+
+}
+
+/*Small Phones*/
+@media only screen and (min-height: 500px) and (max-height: 600px) {
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #hero {
+        background: url(../images/harvest-map.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #E8E8E8;
+        min-height: auto;
+        padding-top: 125px;
+        padding-bottom: 70px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #hero .contact-info {
+        background: var(--primary);
+        padding: 36px;
+        margin: auto;
+        max-width: 365px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #hero {
+        background-color: #E8E8E8;
+        background: url(../images/harvest-map.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: auto;
+        padding: 165px 0 165px 0;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #hero .contact-info {
+        background: var(--primary);
+        padding: 36px;
+        margin: auto;
+        max-width: 365px;
+    }
+
+    #hero .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/* Computer Small/Lanscape Tablet */
+@media only screen and (min-width: 64em) {
+
+    .side-nav a {
+        color: #4a4c4d;
+    }
+    
+    #hero {
+        background-color: #E8E8E8;
+        background: url(../images/harvest-map.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /*background-attachment: fixed;    PARALAX */
+        min-height: auto;
+        padding: 225px 0 225px 0;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #hero .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #hero .contact-info {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+    #hero .container {
+        max-width: 1140px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+/*-- -------------------------- -->
+<---            Location        -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+    
+    #location {
+        text-align: center;
+        margin-bottom: 0px;
+
+    }
+
+    #location .contianer {
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 25vw;
+    }
+
+}
+
+
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+    #cta {
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #cta h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+
+    #cta p {
+        font-size: 20px;
+        line-height: 1.5em;
+        margin-bottom: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #cta .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    #cta h2 {
+        font-size: 42px;
+        text-align: left;
+        width: 65vw;
+        max-width: 50vw;
+        margin-left: 5.1635vw;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #cta p {
+        font-size: 20px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+    }
+
+    #cta .button-solid {
+        align-self: center;
+        height: 55px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+}

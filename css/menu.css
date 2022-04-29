@@ -1,0 +1,532 @@
+/*  FIX NAV     */
+ul.line-nav-tabs li:nth-of-type(3):after {
+    width: 0%;
+}
+
+
+
+/*-- -------------------------- -->
+<---         Landing            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #hero {
+        font-size: inherit;
+        height: 50vh;
+        position: relative;
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 50vh;
+        width: 100%;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 2.2em;
+        color: var(--herowhite);
+        text-align: center;
+        line-height: 1.2em;
+        margin: 13vh auto auto auto;
+        width: 100%;
+        max-width: 20em;
+        z-index: 3;
+        position: relative;
+    }
+
+    #hero .button-solid {
+        position: relative;
+        margin: 10vh auto auto auto;
+        text-align: center;
+        width: 8.95em;
+        z-index: 3;
+        display: block;
+
+        
+        /*background:linear-gradient(to bottom, var(--primarybutton) 100%, var(--harvest) 100%);*/
+    }
+
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #hero {
+        font-size: inherit;
+        height: 75vh;
+        width: 100vw;/*
+        position: absolute;*/
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 75vh;
+        width: 100vw;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 75vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 36px;
+        margin: 16vh auto auto auto;
+    }
+
+    #hero .button-solid {
+        margin-top: 12vh;
+    }
+
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+/*    #hero {
+        height: 80vh;
+        width: 100%;
+    }
+
+    #hero:before {
+        height: 102vh;
+        width: 100vw;
+    }
+
+    #hero picture img {
+        width: 100vw;
+        height: 102vh;
+    }
+
+    #hero h1 {
+        font-size: 3.5em;
+        margin: 16vh auto auto auto;
+        line-height: 1.5em;
+        margin: 25vh auto auto auto;
+        max-width: 13em;
+    }
+
+    #hero p {
+        font-size: 1.6em;
+        line-height: 1.5em;
+        margin: 3vh auto 4vh auto;
+        width: 100%;
+        max-width: 20em;
+    }*/
+
+    #hero {
+        font-size: inherit;
+        height: 35vh;
+        width: 100vw;/*
+        position: absolute;*/
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 35vh;
+        width: 100vw;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 35vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 36px;
+        margin: 16vh auto auto auto;
+    }
+
+    #hero .button-solid {
+        margin-top: 4vh;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    /*#hero {
+        height: 90vh;
+        width: 100%;
+    }*/
+
+    #hero {
+        font-size: inherit;
+        height: 45vh;
+        width: 100vw;/*
+        position: absolute;*/
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 45vh;
+        width: 100vw;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 45vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 36px;
+        margin: 16vh auto auto auto;
+    }
+
+    #hero .button-solid {
+        margin-top: 9vh;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+
+    /*#hero {
+        height: 90vh;
+        width: 100%;
+    }
+
+    #hero:before {
+        height: 102vh;
+        width: 100vw;
+    }
+
+    #hero picture img {
+        width: 100vw;
+        height: 102vh;
+    }
+
+    #hero h1 {
+        font-size: 3.75em;
+        line-height: 1.5em;
+        max-width: 15em;
+    }
+
+    #hero p {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin: 3vh auto 3vh auto;
+        width: 100%;
+        max-width: 22em;
+    }*/
+
+    #hero {
+        font-size: inherit;
+        height: 55vh;
+        width: 100vw;/*
+        position: absolute;*/
+        top: 0;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 55vh;
+        width: 100vw;
+        background: #000;
+        opacity: .60;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hero picture img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 55vh;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        font-weight: bold;
+        font-size: 36px;
+        margin: 22vh auto auto auto;
+    }
+
+    #hero .button-solid {
+        margin-top: 15vh;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---            Menu            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #menu {
+        position: relative;
+        padding: 0px 10px ;
+    }
+
+    #menu h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+        text-align: left;
+    }
+
+    #menu h3 {
+        text-align: right;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+
+    #menu .container {
+        text-align: center;
+    }    
+
+    #menu .button-solid {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu .oven img {
+        display: block;
+        margin: 50px auto;
+        width: 80vw;
+        height: auto;
+        max-width: 600px;
+        z-index: 2;
+    }
+
+    /*#menu .oven:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 200px;
+        width: 80vw;
+        max-width: 600px;
+        background: var(--harvest);
+        opacity: .60;
+        z-index: 1;
+        transform: translateX(30px) translateY(-30px);
+    }*/
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #menu h2 {
+        font-size: 46px;
+        line-height: 56px;
+        padding-right: 60%;
+    }
+
+    #menu h3 {
+        text-align: right;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #menu h2 {
+        font-size: 46px;
+        line-height: 56px;
+        padding-right: 40%;
+    }
+
+    #menu h3 {
+        text-align: right;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+}
+
+
+
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+    #cta {
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #cta h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+
+    #cta p {
+        font-size: 20px;
+        line-height: 1.5em;
+        margin-bottom: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primaryblack);
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #cta .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    #cta h2 {
+        font-size: 42px;
+        text-align: left;
+        width: 65vw;
+        max-width: 50vw;
+        margin-left: 5.1635vw;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #cta p {
+        font-size: 20px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+    }
+
+    #cta .button-solid {
+        align-self: center;
+        height: 55px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+}
