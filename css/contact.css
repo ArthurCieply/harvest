@@ -55,16 +55,27 @@ ul.line-nav-tabs li:nth-of-type(5):after {
         position: relative;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         position: relative;
         margin: 19vh auto auto auto;
         text-align: center;
         width: 8.95em;
         z-index: 3;
-        display: block;
-
+        display: block;*/
         
         /*background:linear-gradient(to bottom, var(--primarybutton) 100%, var(--harvest) 100%);*/
+    /*}*/
+
+    #hero .button-solid {
+        position: absolute;
+        margin: 0 auto 0 auto;
+        top: 46vh;
+        left: 27.5%;
+        right: 27.5%;
+        text-align: center;
+        width: 45%;
+        z-index: 3;
+        display: block;
     }
 
 
@@ -110,11 +121,14 @@ ul.line-nav-tabs li:nth-of-type(5):after {
         margin: 16vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 27vh;
+    }*/
+
+
+    #hero .button-solid {
+        top: 68vh;
     }
-
-
 
 }
 
@@ -186,11 +200,15 @@ ul.line-nav-tabs li:nth-of-type(5):after {
     #hero h1 {
         font-weight: bold;
         font-size: 36px;
-        margin: 16vh auto auto auto;
+        margin: 12vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 7vh;
+    }*/
+
+    #hero .button-solid {
+        top: 32vh;
     }
 
 }
@@ -240,8 +258,12 @@ ul.line-nav-tabs li:nth-of-type(5):after {
         margin: 16vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 13vh;
+    }*/
+
+    #hero .button-solid {
+        top: 41vh;
     }
 
 }
@@ -316,8 +338,12 @@ ul.line-nav-tabs li:nth-of-type(5):after {
         margin: 22vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 17vh;
+    }*/
+
+    #hero .button-solid {
+        top: 52vh;
     }
 
 }
