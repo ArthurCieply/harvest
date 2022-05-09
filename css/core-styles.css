@@ -523,6 +523,16 @@
 
 }
 
+/* Narrow Phone */
+@media only screen and (min-width: 300px) and (max-width: 359px) {
+
+    .revealed {
+        padding-left: 20px;
+    }
+    
+}
+
+
 /* Landscape Phone */
 @media only screen and (min-width: 30em) and (max-width: 47.9375em) {
 
