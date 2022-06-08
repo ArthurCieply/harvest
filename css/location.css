@@ -40,7 +40,7 @@ ul.line-nav-tabs li a {
     }
 
     #hero .contact-info {
-        background: var(--harvest);
+        background: var(--primary);
         padding: 36px;
         margin: 16px;
         max-width: 365px;

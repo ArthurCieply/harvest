@@ -17,6 +17,7 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         height: 50vh;
         position: relative;
         top: 0;
+        margin-bottom: 2em; /*   New for Menu Selector   */
     }
 
     #hero:before {
@@ -55,18 +56,26 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         position: relative;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         position: relative;
         margin: 10vh auto auto auto;
         text-align: center;
         width: 8.95em;
         z-index: 3;
         display: block;
-
+    }*/
         
         /*background:linear-gradient(to bottom, var(--primarybutton) 100%, var(--harvest) 100%);*/
-    }
 
+    #hero .button-solid {
+        position: relative;
+        display: block;
+        margin: 5vh auto 5vh auto;
+        width: 8.95em;
+        text-align: center;
+        z-index: 3;
+        
+    }
 
 }
 
@@ -110,11 +119,13 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         margin: 16vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 12vh;
+    }*/
+
+    #hero .button-solid {
+        margin: 7vh auto;
     }
-
-
 
 }
 
@@ -186,11 +197,11 @@ ul.line-nav-tabs li:nth-of-type(3):after {
     #hero h1 {
         font-weight: bold;
         font-size: 36px;
-        margin: 16vh auto auto auto;
+        margin: 12vh auto auto auto;
     }
 
     #hero .button-solid {
-        margin-top: 4vh;
+        margin: 3vh auto;
     }
 
 }
@@ -240,9 +251,9 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         margin: 16vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 9vh;
-    }
+    }*/
 
 }
 
@@ -316,11 +327,3807 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         margin: 22vh auto auto auto;
     }
 
-    #hero .button-solid {
+    /*#hero .button-solid {
         margin-top: 15vh;
+    }*/
+
+}
+
+/*-- -------------------------- -->
+<---          Selector          -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #selector {
+        padding: 0px 8px 0px 8px;
+        margin-bottom: 0px;
+    }
+
+    .off {
+        display: none;
+    }
+
+    .on {
+        display: block;
+    }
+
+    .selector-div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        row-gap: 10px;
+    }
+
+    #selector button {
+        margin: 0px;
+    }
+
+    .selector-button {
+        display: inline-block;
+        margin: 0px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 22px;
+        min-width: 100px;
+        max-width: 175px;
+        width: 46.65%;/*175px;*/ /*150px*/
+        height: 55px;
+        padding: 0px 5px !important;
+        border-radius: 5px;
+        border: transparent;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        background-color: transparent;/*var(--primary)*/
+        color: var(--primaryblack);/*var(--primarywhite);*/
+
+        /*-webkit-box-shadow: 0px 2px 5px -1px rgb(14, 0, 0);
+
+                box-shadow: 0px 2px 5px -1px rgb(14, 0, 0);*/
+    }
+
+    .selector-button:hover {
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+    }
+
+    .active {
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        text-decoration: underline;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+    }
+
+	/*.selector-button:active {
+		-webkit-transform: scale(.97) translateY(2px);
+		    -ms-transform: scale(.97) translateY(2px);
+		        transform: scale(.97) translateY(2px);
+	}*/
+
+
+}
+
+/* Wide Phone */
+@media only screen and (min-width: 390px) {
+
+    #selector {
+        padding: 0px 16px 0px 16px;
+        margin-bottom: 0px;
+    }
+
+    /*.selector-div {
+        justify-content: space-around;
+    }*/
+
+    .selector-button {
+        line-height: 24px;
+        font-size: 22px;
+        height: 57px;
     }
 
 }
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #selector {
+        padding: 0px 25px ;
+        margin-bottom: 0px;
+    }
+
+    .selector-div {
+        justify-content: space-around/*space-evenly*/;
+        row-gap: 15px;
+    }
+
+    .selector-button {
+        margin: 0px;
+        text-align: center;
+        height: 60px;
+        line-height: 26px;
+        min-width: 100px;
+        max-width: 200px; /*175px;*/
+        width: 30%;/*195px;*//*46.65%;*//*175px;*/ /*150px*/
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #selector {
+        padding: 25px 16px;
+    }
+
+    .selector-div {
+        max-width: 650px;
+        margin: 0px auto;
+    }
+
+    .selector-button {
+        line-height: 30px;
+        font-size: 28px;
+        height: 83px;
+        min-width: 100px;
+        max-width: 200px;
+        width: 40%;
+    }
+
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    .selector-div {
+        max-width: 850px;
+        margin: 0px auto;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    .selector-div {
+        max-width: 1050px;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---            Pizzas            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #pizzas {
+        margin: 0px;
+
+        /*   Close Animation   */
+    }
+
+    #pizzas h2 {
+        font-size: 36px;
+        margin: auto 20vw;  /*  Narrow Title Bar    */
+        height: 48px;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    #pizzas h2 {
+        max-width: 450px;
+        margin: auto;   /*   Wide Title Bar   */
+    }
+
+    #pizzas h3 {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin: 18px 0px;
+        text-align: center;
+        position: relative;
+    }
+
+    #pizzas p {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px auto 18px;
+        width: 80%;
+    }
+
+    #pizzas .options {
+        overflow: hidden;
+    }
+
+    #pizzas .container {
+        width: 100%;
+        height: 200px; /*fit-content*/
+        margin: 0px 0px 30px 0px;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*column-gap: 10px;*/
+        overflow: hidden;
+    }
+
+    #pizzas .type {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        min-width: 0;
+        width: 150px;/*175px;*/
+        height: 40px;/*  Possibly Remove   */
+        text-align: center;/*left;*/
+        line-height: 1.8em;
+    }
+
+    #pizzas .type:nth-of-type(2) {
+        text-align: left;
+        white-space: nowrap;
+        overflow: visible;
+        justify-content: center;
+        /*justify-self: start;*/
+
+        width: 170px;
+    }
+
+    /*#pizzas .type:nth-of-type(2),*/
+    #pizzas .type:nth-of-type(4),
+    #pizzas .type:nth-of-type(6) {
+        /*text-align: right;*/ text-align: center;
+    }
+
+    #pizzas .type:nth-of-type(7) {
+        text-align: center;
+    }    
+
+    #pizzas .next-line {
+        display: none;
+    }
+
+    #pizzas .price {
+        margin-left: 8px;
+        font-weight: 700;
+        color: var(--harvest);
+    }
+
+    #pizzas .toppings-title {
+        margin: auto 20vw 25px 20vw;
+        /*text-decoration: underline;*/
+    }
+
+    #pizzas .toppings-title:before,
+    #pizzas .toppings-title:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #pizzas .toppings-title:before {
+        margin-left: -53%;
+        text-align: right;
+    }
+
+    #pizzas .toppings-title:after {
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    #pizzas h4.sub-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin: auto 20vw 5px 20vw;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #pizzas .toppings {
+        width: 100%;
+        margin: 20px auto 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+
+        padding: 0px 15px;
+        list-style: none;
+        font-size: 20px;
+        color: var(--primaryblack);
+    }
+
+    #pizzas .meat-toppings {
+        height: 175px;
+    }
+
+    #pizzas .fvm-toppings {
+        height: 450px;
+    }
+
+    #pizzas ul {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+
+        padding: 0px 8px;
+        list-style: none;
+        font-size: 20px;
+        color: var(--primaryblack);
+    }
+
+    #pizzas li {
+        width: 45%;/*150px;*/
+        min-height: 35px;
+        height: fit-content;
+        line-height: 22px;
+    }
+
+    #pizzas li:nth-of-type(17) {
+        justify-content: center;
+        margin: 0px auto;
+    }
+
+    #pizzas .special-toppings {
+        padding: 0px 23px;
+    }
+
+    #pizzas .red-onion {
+        display: none !important;
+    }
+
+    #pizzas .phone-breaks {
+        
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    #pizzas .container {
+         height: 320px !important;
+    }
+
+    #pizzas .container {
+        width: 100%;
+        height: 200px; /*fit-content*/
+        margin: 0px 0px 20px 0px;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*column-gap: 10px;*/
+        overflow: hidden;
+    }
+
+    #pizzas .type {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        min-width: 0;
+        width: 130px;/*175px;*/
+        height: 80px;/*  Possibly Remove   */
+        text-align: center;/*left;*/
+        line-height: 1.8em;
+    }
+
+    #pizzas .type:nth-of-type(2) {
+        width: 130px;
+        height: 80px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: visible;
+        justify-content: center;
+    }
+
+    #pizzas .next-line {
+        display: block;
+    }
+
+    #pizzas .price {
+        margin-left: 8px;
+        font-weight: 700;
+        color: var(--harvest);
+    }
+
+    
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    /*  Wide prices  */
+    /*#pizzas .container { 
+        width: 100%;
+        height: 100px;
+        margin: 25px 0px;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+    }*/
+
+    /*  Narrow prices  */
+    /*#pizzas .container {
+        width: 75%;
+        height: 130px;
+        margin: 25px auto;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+    }*/
+
+    #pizzas p {
+        width: 90%;
+    }
+
+    #pizzas .container {
+        width: 85%;
+        height: 200px;
+        margin: 25px auto;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    #pizzas .type {
+        width: 45%;
+    }
+
+    #pizzas .type:nth-of-type(2) {
+        text-align: center;/*left;*/
+        white-space: nowrap;
+        overflow: visible;
+        justify-content: center;
+        justify-self: start;
+        width: 45%;/*170px;*/
+    }
+
+    #pizzas .phone-breaks {
+        display: none;
+    }
+
+    #pizzas .meat-toppings {
+        /*height: 175px;*/
+    }
+
+    #pizzas ul {
+        width: 80%/*100%*/;/*
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;*/
+        margin: 25px auto;/*
+        padding: 0px 8px;
+        list-style: none;
+        font-size: 20px;
+        color: var(--primaryblack);*/
+    }
+
+    /*#pizzas li {
+        width: 45%;
+        min-height: 35px;
+        height: fit-content;
+        line-height: 22px;
+    }*/
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+
+    /*  Phone Style  */
+    #pizzas .container {
+        width: 100%;
+        height: 200px;
+        margin: 0px 0px 50px 0px;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /* column-gap: 10px; */
+        overflow: hidden;
+    }    
+
+    #pizzas p {
+        width: 90%;
+    }
+
+    /*  Landscape Style  */
+    #pizzas .container {
+        width: 100%;/*85%;*/
+        height: 200px;
+        margin: 25px auto;
+        padding: 0px 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    #pizzas .toppings {
+        margin: 50px auto 50px;
+    }
+
+    #pizzas .toppings-title {
+        margin: auto 20vw 30px 20vw;
+        /* text-decoration: underline; */
+    }
+
+    #pizzas .toppings {
+        margin: 30px auto 30px;
+    }
+
+    #pizzas .type {
+        width: 45%;
+    }
+
+    #pizzas .type:nth-of-type(2) {
+        text-align: center;/*left;*/
+        white-space: nowrap;
+        overflow: visible;
+        justify-content: center;
+        justify-self: start;
+        width: 45%;/*170px;*/
+    }
+
+    #pizzas ul {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: /*space-evenly*/space-between;
+        text-align: center;
+        padding: 0px 8px;
+        list-style: none;
+        font-size: 20px;
+        color: var(--primaryblack);
+    }
+
+    #pizzas li {
+        width: 33%;/*45%;*/
+        min-height: 35px;
+        height: fit-content;
+        line-height: 22px;
+    }
+    
+    #pizzas .phone-breaks {
+        display: none;
+    }
+
+    #pizzas li:nth-of-type(17) {
+        justify-content: center;
+        margin: 0px 0px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #pizzas {
+        max-width: 1100px;
+        margin: 0px auto;
+    }
+
+    #pizzas .container {
+        width: 100%;
+        height: 200px;
+        margin: 25px auto 50px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: /*space-between*/space-around;
+        overflow: hidden;
+    }
+
+    #pizzas .type {
+        width: 45%;/*45%;*/
+    }
+
+    #pizzas .type:nth-of-type(2) {
+        width: 45%;
+    }
+    
+    #pizzas .toppings-title:before,
+    #pizzas .toppings-title:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 60%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #pizzas .toppings-title:before {
+        margin-left: -65%;
+        text-align: right;
+    }
+
+    #pizzas .toppings-title:after {
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    #pizzas ul {
+        padding: 0px;
+    }
+
+    #pizzas li {
+        width: 25%;
+        min-height: 35px;
+        height: fit-content;
+        line-height: 22px;
+    }
+
+    #pizzas .toppings {
+        padding: 0px;
+    }
+
+    #pizzas li:nth-of-type(17) {
+        width: 100%;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---      Specialty-Pizzas      -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #specialty-pizzas {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #specialty-pizzas h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    /*  From Pizza
+    
+    #pizzas h2 {
+        font-size: 36px;
+        margin: auto 20vw;
+        height: 48px;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    #pizzas h2 {
+        max-width: 450px;
+        margin: auto;
+    }*/
+
+    /*  Line Heading    */
+/*
+    #specialty-pizzas h2 {
+        position: relative;
+        font-size: 36px;
+        /*margin: auto 20vw;* /
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    #specialty-pizzas .h2:before,
+    #specialty-pizzas .h2:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 12%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #specialty-pizzas .h2:before {
+        margin-left: -15%;
+        text-align: right;
+    }
+
+    #specialty-pizzas .h2:after {
+        margin-left: 3%;
+        text-align: right;
+    }*/
+
+    /*  End Line Heading    */
+
+    #specialty-pizzas .container {
+        margin-bottom: 30px;
+    }
+
+    /*#specialty-pizzas h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #specialty-pizzas .pizza-name {
+        width: 100%;
+    }
+
+    #specialty-pizzas h3 .line {
+        min-width: 30vw;
+        max-width: 40vw;
+        width: fit-content;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 6px;
+        margin-right: 12px;
+    }
+
+    #specialty-pizzas h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #specialty-pizzas p {
+        margin-bottom: 36px;
+    }*/
+
+    #specialty-pizzas h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #specialty-pizzas .pizza-name {
+        width: 100%;
+    }
+
+    #specialty-pizzas h3 .line {
+        min-width: 5vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #specialty-pizzas h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #specialty-pizzas p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    #specialty-pizzas h2 {
+        font-size: 36px;
+        margin: auto 5vw;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;
+        margin-bottom: 28px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+    }
+
+    #specialty-pizzas .cbr .line {
+        min-width: 2vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #specialty-pizzas .specialty-pizzas-container {
+        margin: auto 50px;
+    }
+
+    #specialty-pizzas h2 {
+        font-size: 36px;
+        margin: auto 20vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #specialty-pizzas .specialty-pizzas-container {
+        margin: auto 50px;
+    }
+
+    #specialty-pizzas h2 {
+        font-size: 36px;
+        margin: auto 20vw;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    /*#pizzas h2 {
+        font-size: 36px;
+        margin: auto 20vw;
+        height: 48px;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 28px;
+        text-align: center;
+    }*/
+
+    #specialty-pizzas h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+
+    #specialty-pizzas h3 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #specialty-pizzas h2 {
+        font-size: 36px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    #specialty-pizzas .specialty-pizzas-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #specialty-pizzas .container {
+        width: 45%;
+        margin: 25px;
+        margin-bottom: /*30px*/;
+    }
+
+    #specialty-pizzas p {
+        margin-bottom: /*1*/0px/*36px*/;
+        /* max-width: 90%; */
+    }
+
+    /*#specialty-pizzas h2 {
+        font-size: 36px;
+        margin: auto 20vw;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }*/
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #specialty-pizzas {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #specialty-pizzas .container {
+        width: 25%;
+        max-width: 400px;
+        padding: 0px;
+        margin: 25px;
+    }
+
+    #specialty-pizzas .cbr .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #specialty-pizzas h3 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #specialty-pizzas {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+    /*#specialty-pizzas .container {
+        width: 25%;
+        max-width: 400px;
+        margin: 25px;
+    }*/
+
+}
+
+/*-- -------------------------- -->
+<---            Dinner          -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #dinners {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #dinners h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    #dinners .about {
+        text-align: center;
+        margin: auto 5vw;
+    }
+
+    #dinners .container {
+        margin-bottom: 30px;
+    }
+
+    #dinners h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #dinners .dinner-name {
+        width: 100%;
+    }
+
+    #dinners h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #dinners h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #dinners p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+}
+
+/* Narrow Phone */
+/*@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+}*/
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #dinners .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #dinners .dinners-container {
+        margin: auto 50px;
+    }
+
+    /*#dinners h2 {
+        font-size: 36px;
+        margin: auto 20vw;  /*  Narrow Title Bar    * /
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  * /
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }*/
+
+    #dinners .long-name br{
+        display: none;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #dinners .about {
+        text-align: center;
+        margin: auto 70px;
+    }
+
+    #dinners .dinners-container {
+        margin: auto 50px;
+    }
+
+    #dinners h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+
+    #dinners h3 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #dinners .long-name br{
+        display: none;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #dinners .about {
+        margin: auto 15vw;
+    }
+
+    #dinners h2 {
+        font-size: 36px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    #dinners .dinners-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #dinners .container {
+        width: 45%;
+        margin: 25px;
+        margin-bottom: /*30px*/;
+    }
+
+    #dinners p {
+        margin-bottom: /*1*/0px/*36px*/;
+        /* max-width: 90%; */
+    }
+
+
+    #dinners h3 .line {
+        min-width: 4vw;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #dinners {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #dinners .about {
+        margin: auto 20vw;
+        margin-bottom: 40px;
+    }
+
+    #dinners .dinners-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #dinners .container {
+        width: 35%/*25%*/;
+        /*max-width: 400px;*/
+        padding: 0px;
+        margin: 25px;
+    }
+
+    #dinners h3 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #dinners {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---     Seniors & Childern     -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #seniors-and-children {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #seniors-and-children h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    /*#seniors-and-children .about {
+        text-align: center;
+        margin: auto 5vw;
+    }*/
+
+    #seniors-and-children .container {
+        margin-bottom: 30px;
+    }
+
+    #seniors-and-children h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #seniors-and-children .dinner-name {
+        width: 100%;
+    }
+
+    #seniors-and-children h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #seniors-and-children h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #seniors-and-children h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    #seniors-and-children h4 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #seniors-and-children h4 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #seniors-and-children p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    /*  Block Heading   */
+    #seniors-and-children h2 {
+        height: 90px;
+        white-space: normal;
+        max-width: 250px;
+        overflow: hidden;
+        overflow-wrap: break-all;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #seniors-and-children .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #seniors-and-children .seniors-and-children-container {
+        margin: auto 50px;
+    }
+
+    #seniors-and-children h3 .line {
+        max-width: 60vw;
+    }
+
+    #seniors-and-children h4 .line {
+        max-width: 60vw;
+
+    }
+
+    #seniors-and-children .long-name br{
+        display: none;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #seniors-and-children .about {
+        text-align: center;
+        margin: auto 70px;
+    }
+
+    #seniors-and-children .seniors-and-children-container {
+        margin: auto 50px;
+    }
+
+    #seniors-and-children h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+
+    #seniors-and-children h3 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #seniors-and-children h4 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #seniors-and-children .long-name br{
+        display: none;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #seniors-and-children h2 {
+        font-size: 36px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    #seniors-and-children .seniors-and-children-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #seniors-and-children .container {
+        width: 45%;
+        margin: 25px;
+        margin-bottom: /*30px*/;
+    }
+
+    #seniors-and-children p {
+        margin-bottom: /*1*/0px/*36px*/;
+        /* max-width: 90%; */
+    }
+
+
+    #seniors-and-children h3 .line,
+    #seniors-and-children h4 .line {
+        min-width: 4vw;
+    }
+
+    #seniors-and-children .long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    
+    #seniors-and-children {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #seniors-and-children .about {
+        margin: auto 20vw;
+    }
+
+    #seniors-and-children .dinners-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #seniors-and-children .container {
+        width: 25%/*35%*/;
+        /*max-width: 400px;*/
+        padding: 0px;
+        margin: 25px;
+    }
+
+    #seniors-and-children h3 .line,
+    #seniors-and-children h4 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #seniors-and-children .long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #seniors-and-children {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---           Pasta            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #pasta {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #pasta h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    #pasta .about {
+        text-align: center;
+        margin: auto 5vw;
+    }
+
+    #pasta .container {
+        margin-bottom: 30px;
+    }
+
+    #pasta h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #pasta .dinner-name {
+        width: 100%;
+    }
+
+    #pasta h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #pasta h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #pasta h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    #pasta h4 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #pasta h4 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #pasta p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+    #pasta p:nth-of-type(1) {
+        margin-bottom: 18px;
+    }
+
+    #pasta .narrow-long-name br:nth-of-type(1){
+        display: none;
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    #pasta .narrow-long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #pasta .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #pasta .pasta-container {
+        margin: auto 50px;
+    }
+
+    #pasta h3 .line {
+        max-width: 60vw;
+    }
+
+    #pasta h4 .line {
+        max-width: 60vw;
+
+    }
+
+    #pasta .long-name br{
+        display: none;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #pasta .about {
+        text-align: center;
+        margin: auto 70px;
+    }
+
+    #pasta .pasta-container {
+        margin: auto 50px;
+    }
+
+    #pasta h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+
+    #pasta h3 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #pasta h4 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #pasta .long-name br{
+        display: none;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #pasta h2 {
+        font-size: 36px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    #pasta .pasta-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #pasta .container {
+        width: 45%;
+        margin: 25px;
+        margin-bottom: /*30px*/;
+    }
+
+    #pasta p {
+        margin-bottom: /*1*/0px/*36px*/;
+        /* max-width: 90%; */
+    }
+
+
+    #pasta h3 .line,
+    #pasta h4 .line {
+        min-width: 4vw;
+    }
+
+    #pasta .long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #pasta {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #pasta .about {
+        margin: auto 20vw;
+        margin-bottom: 40px;
+    }
+
+
+    /*  bottom 1 on each side middle blank VS 2 in the middle-ish   */
+    #pasta .pasta-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #pasta .container {
+        width: 25%/*35%*/;
+        /*max-width: 400px;*/
+        padding: 0px;
+        margin: 25px;
+    }
+
+    #pasta h3 .line,
+    #pasta h4 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #pasta .long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+    #pasta .narrow-long-name br:nth-of-type(1),
+    #pasta .narrow-long-name br:nth-of-type(2) {
+        display: inline-block;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #pasta {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+
+/*-- -------------------------- -->
+<---    Italian Specialties     -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #italian-specialties {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #italian-specialties h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    #italian-specialties .about {
+        text-align: center;
+        margin: auto 5vw;
+    }
+
+    #italian-specialties .container {
+        margin-bottom: 30px;
+    }
+
+    #italian-specialties h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #italian-specialties .dinner-name {
+        width: 100%;
+    }
+
+    #italian-specialties h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #italian-specialties h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #italian-specialties h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    #italian-specialties h4 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #italian-specialties h4 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #italian-specialties p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+    /*#italian-specialties p:nth-of-type(1) {
+        margin-bottom: 18px;
+    }*/
+
+    #italian-specialties .narrow-long-name br:nth-of-type(1){
+        display: none;
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    #italian-specialties .narrow-long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #italian-specialties .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #italian-specialties .italian-specialties-container {
+        margin: auto 50px;
+    }
+
+    #italian-specialties h3 .line {
+        max-width: 60vw;
+    }
+
+    #italian-specialties h4 .line {
+        max-width: 60vw;
+
+    }
+
+    /*#italian-specialties .long-name br{
+        display: none;
+    }*/
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #italian-specialties .about {
+        text-align: center;
+        margin: auto 70px;
+    }
+
+    #italian-specialties .italian-specialties-container {
+        margin: auto 50px;
+    }
+
+    #italian-specialties h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+
+    #italian-specialties h3 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #italian-specialties h4 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #italian-specialties .long-name br{
+        display: none;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #italian-specialties h2 {
+        font-size: 36px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    #italian-specialties .italian-specialties-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #italian-specialties .container {
+        width: 45%;
+        margin: 25px;
+        margin-bottom: /*30px*/;
+    }
+
+    #italian-specialties p {
+        margin-bottom: /*1*/0px/*36px*/;
+        /* max-width: 90%; */
+    }
+
+
+    #italian-specialties h3 .line,
+    #italian-specialties h4 .line {
+        min-width: 4vw;
+    }
+
+    /*#italian-specialties .long-name br:nth-of-type(1){
+        display: inline-block;
+    }*/
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #italian-specialties {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #italian-specialties .about {
+        margin: auto 20vw;
+        margin-bottom: 40px;
+    }
+
+    /*  bottom 1 on each side middle blank VS 2 in the middle-ish   */
+    #italian-specialties .italian-specialties-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #italian-specialties .container {
+        width: 25%/*35%*/;
+        /*max-width: 400px;*/
+        padding: 0px;
+        margin: 25px;
+    }
+
+    #italian-specialties h3 .line,
+    #italian-specialties h4 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*#italian-specialties .long-name br:nth-of-type(1){
+        display: inline-block;
+    }*/
+
+    #italian-specialties .narrow-long-name br:nth-of-type(1),
+    #italian-specialties .narrow-long-name br:nth-of-type(2) {
+        display: inline-block;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #italian-specialties {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---    Burgers & Sandwiches    -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #burgers-and-sandwiches {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #burgers-and-sandwiches h2.heading {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 90px;
+        white-space: normal;
+        max-width: 450px;
+        overflow: hidden;
+        overflow-wrap: break-all;
+    }
+
+    /*#burgers-and-sandwiches .hot-sandwiches h2:nth-of-type(1) {
+        height: 48px;
+        white-space: normal;
+        max-width: 450px;
+        overflow: hidden;
+        overflow-wrap: break-all;
+    }*/
+
+
+    /*  Line Subtitles  */
+    
+    #burgers-and-sandwiches h2.subheading{
+        font-size: 26px;
+        margin: auto 3vw 36px;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        color: var(--primaryblack) ;
+        text-align: center;
+        height: 32px;/*48px;*/
+        white-space: nowrap;
+        max-width: 450px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #burgers-and-sandwiches h2.subheading-with-about{
+        margin-bottom: 18px;  
+    }
+
+    #burgers-and-sandwiches h2.subheading:before,
+    #burgers-and-sandwiches h2.subheading:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #burgers-and-sandwiches h2.subheading:before {
+        margin-left: -53%;
+        text-align: right;
+    }
+
+    #burgers-and-sandwiches h2.subheading:after {
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    #burgers-and-sandwiches .about {
+        text-align: center;
+        margin: auto 5vw;
+    }
+
+    #burgers-and-sandwiches .container {
+        margin-bottom: 30px;
+    }
+
+    #burgers-and-sandwiches h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #burgers-and-sandwiches .dinner-name {
+        width: 100%;
+    }
+
+    #burgers-and-sandwiches h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #burgers-and-sandwiches h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #burgers-and-sandwiches h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    #burgers-and-sandwiches h4 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #burgers-and-sandwiches h4 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #burgers-and-sandwiches p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+    #burgers-and-sandwiches p.description {
+        text-align: center;
+        margin: 36px 15vw;
+    }
+
+    /*#burgers-and-sandwiches p:nth-of-type(1) {
+        margin-bottom: 18px;
+    }*/
+
+    #burgers-and-sandwiches .narrow-long-name br {
+        display: none;
+    }
+
+    /*#burgers-and-sandwiches .wide-description {
+        display: none;
+    }*/
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    #burgers-and-sandwiches .narrow-long-name br {
+        display: block;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #burgers-and-sandwiches h2.subheading {
+        margin: auto auto 36px;
+    }
+
+    #burgers-and-sandwiches h2.subheading-with-about {
+        margin-bottom: 18px;
+    }
+
+    
+    #burgers-and-sandwiches .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #burgers-and-sandwiches p.description {
+        text-align: center;
+        margin: 36px 11vw;
+    }
+
+    #burgers-and-sandwiches .burgers-and-sandwiches-container {
+        margin: auto 50px;
+    }
+
+    #burgers-and-sandwiches h3 .line {
+        max-width: 60vw;
+    }
+
+    #burgers-and-sandwiches h4 .line {
+        max-width: 60vw;
+    }
+
+    #burgers-and-sandwiches .long-name br{
+        display: none;
+    }
+
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #burgers-and-sandwiches h2.subheading {
+        margin: auto auto 36px;
+    }
+
+    #burgers-and-sandwiches .about {
+        text-align: center;
+        margin: auto 70px;
+    }
+
+    #burgers-and-sandwiches .burgers-and-sandwiches-container {
+        margin: auto 50px;
+    }
+
+    #burgers-and-sandwiches h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+
+    #burgers-and-sandwiches .clubs-container,
+    #burgers-and-sandwiches .burgers-container,
+    #burgers-and-sandwiches .italian-sandwiches-container,
+    #burgers-and-sandwiches .sandwiches-container,
+    #burgers-and-sandwiches .mayo-sandwiches-container,
+    #burgers-and-sandwiches .non-mayo-sandwiches-container,
+    #burgers-and-sandwiches .hot-sandwiches-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #burgers-and-sandwiches .container {
+        width: 47%;
+        margin: 25px 5px;
+        padding: auto 7px;
+        margin-bottom: /*30px*/;
+        max-width: 305px;
+    }
+
+    #burgers-and-sandwiches p.description {
+        text-align: center;
+        margin: 18px 15vw;
+    }
+
+    #burgers-and-sandwiches .clubs-container .container:nth-of-type(5),
+    #burgers-and-sandwiches .burgers-container .container:nth-of-type(5),
+    #burgers-and-sandwiches .non-mayo-sandwiches-container .container:nth-of-type(9),
+    #burgers-and-sandwiches .hot-sandwiches-container .container:nth-of-type(3) {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    
+    #burgers-and-sandwiches .non-mayo-sandwiches-container .container:nth-of-type(9) {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    /*#burgers-and-sandwiches .harvest-club {
+        width: 100%;
+        margin: auto auto;
+    }*/
+
+    #burgers-and-sandwiches .narrow-long-name br {
+        display: inline-block;
+    }
+
+    #burgers-and-sandwiches p.just-above-hs {
+        /*margin-bottom: 36px;*/
+        margin: 0px 95px 36px;
+    }
+
+    #burgers-and-sandwiches h3 .line {
+        min-width: 3vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #burgers-and-sandwiches h4 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #burgers-and-sandwiches .long-name br{
+        display: none;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+    
+    #burgers-and-sandwiches .clubs-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: /*space-between*/space-around;
+        /*text-align: center;*/
+    }
+
+    #burgers-and-sandwiches .burgers-container,
+    #burgers-and-sandwiches .italian-sandwiches-container,
+    #burgers-and-sandwiches .sandwiches-container,
+    #burgers-and-sandwiches .mayo-sandwiches-container,
+    #burgers-and-sandwiches .non-mayo-sandwiches-container,
+    #burgers-and-sandwiches .hot-sandwiches-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: /*space-between*/space-around;
+        /*text-align: center;*/
+    }
+
+    #burgers-and-sandwiches .container {
+        width: 47%;
+        margin: 25px 5px;
+        padding: auto 7px;
+        margin-bottom: /*30px*/;
+        max-width: 50%;/*305px;*/
+    }
+
+    #burgers-and-sandwiches p.description {
+        text-align: center;
+        margin: 18px 25vw;
+    }
+
+    #burgers-and-sandwiches p.just-above-hs {
+        /*margin-bottom: 40px;*/
+        margin: 0px 150px 61px/*40px*/;
+    }
+
+    #burgers-and-sandwiches .clubs-container .container:nth-of-type(5),
+    #burgers-and-sandwiches .burgers-container .container:nth-of-type(5),
+    #burgers-and-sandwiches .non-mayo-sandwiches-container .container:nth-of-type(9),
+    #burgers-and-sandwiches .hot-sandwiches-container .container:nth-of-type(3) {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+}
+   
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    #burgers-and-sandwiches {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #burgers-and-sandwiches .burgers-and-sandwiches-container {
+        margin: auto 50px;
+    }
+
+    #burgers-and-sandwiches .about {
+        margin: auto 20vw;
+        margin-bottom: 40px;
+    }
+
+    #burgers-and-sandwiches .clubs-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #burgers-and-sandwiches .burgers-container,
+    #burgers-and-sandwiches .italian-sandwiches-container,
+    #burgers-and-sandwiches .sandwiches-container,
+    #burgers-and-sandwiches .mayo-sandwiches-container,
+    #burgers-and-sandwiches .non-mayo-sandwiches-container,
+    #burgers-and-sandwiches .hot-sandwiches-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #burgers-and-sandwiches .container {
+        width: 25%/*47%*/;
+        margin: 25px/* 5px*/;
+        padding: 0px/*auto 7px*/;
+        /*margin-bottom: /*30px* /;*/
+        max-width: 305px;
+    }
+
+    #burgers-and-sandwiches h3 .line,
+    #burgers-and-sandwiches h4 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    #burgers-and-sandwiches p.description {
+        text-align: center;
+        margin: 18px 25vw;
+    }
+
+    #burgers-and-sandwiches p.just-above-hs {
+        /*margin-bottom: 40px;*/
+        margin: 0px 21vw 61px/*40px*/;
+    }
+
+    #burgers-and-sandwiches .clubs-container .container:nth-of-type(5),
+    #burgers-and-sandwiches .burgers-container .container:nth-of-type(5),
+    #burgers-and-sandwiches .non-mayo-sandwiches-container .container:nth-of-type(9),
+    #burgers-and-sandwiches .hot-sandwiches-container .container:nth-of-type(3) {
+        width: 25%/*100%*/;
+        margin: 25px/* auto*/;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #burgers-and-sandwiches {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---           Salads           -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #salads {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #salads h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    /*#salads .about {
+        text-align: center;
+        margin: auto 5vw;
+    }*/
+
+    #salads .container {
+        margin-bottom: 30px;
+    }
+
+    #salads h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #salads .dinner-name {
+        width: 100%;
+    }
+
+    #salads h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #salads h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #salads h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    #salads h4 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #salads h4 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #salads p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+    /*#salads .long-name {
+
+    }*/
+
+    #salads br.narrow-long-name {
+        display: none;
+    }
+
+    #salads .subheading-container {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #salads h3.subheading{
+        font-size: 26px;
+        margin: auto 3vw 36px;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        color: var(--primaryblack) ;
+        text-align: center;
+        height: 32px;/*48px;*/
+        white-space: nowrap;
+        max-width: 450px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    #salads h3.subheading:before,
+    #salads h3.subheading:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #salads h3.subheading:before {
+        margin-left: -53%;
+        text-align: right;
+    }
+
+    #salads h3.subheading:after {
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    #salads .salad-dressings {
+        height: 300px;
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0px 15px;
+        list-style: none;
+        font-size: 20px;
+        color: var(--primaryblack);
+    }
+    
+    #salads ul {
+        width: 100%;
+        /*height: 800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0;
+        padding: 0px 8px;
+        list-style: none;
+        font-size: 20px;
+        color: var(--primaryblack);
+        align-items: center;
+    }
+
+    #salads li {
+        width: 45%;/*150px;*/
+        min-height: 35px;
+        height: fit-content;
+        line-height: 22px;
+        text-align: center;
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    /*#salads .long-name br:nth-of-type(1) {
+        display: none;
+    }*/
+
+    #salads br.narrow-long-name {
+        display: inline-block;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+
+    #salads .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #salads .salads-container {
+        margin: auto 50px;
+    }
+
+    #salads h3 .line {
+        max-width: 60vw;
+    }
+
+    #salads h4 .line {
+        max-width: 60vw;
+
+    }
+
+    #salads .long-name br{
+        display: none;
+    }
+
+    #salads .extra-long-name br:nth-of-type(1) {
+        display: inline-block;
+    }
+
+    #salads .subheading-container {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #salads h3.subheading{
+        margin: auto auto 36px;
+    }
+
+    #salads ul {
+        justify-content: space-around;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #salads .salads-container {
+        margin: auto 50px;
+    }
+
+    #salads h2 {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 36px /*18px*/;
+    }
+
+    #salads h3 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #salads h4 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #salads .long-name br{
+        display: none;
+    }
+
+    #salads .subheading-container {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #salads h3.subheading{
+        margin: auto auto 36px;
+    }
+
+    #salads ul {
+        justify-content: space-around;
+        padding: 0px 32px;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+
+    #salads h2 {
+        font-size: 36px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;
+    }
+
+    #salads .salads-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /*text-align: center;*/
+    }
+
+    #salads .container {
+        width: 45%;
+        margin: 25px;
+        margin-bottom: /*30px*/;
+    }
+
+    #salads p {
+        margin-bottom: /*1*/0px/*36px*/;
+        /* max-width: 90%; */
+    }
+
+
+    #salads h3 .line,
+    #salads h4 .line {
+        min-width: 4vw;
+    }
+
+    #salads .long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+    #salads h3.subheading {
+        margin: 25px auto 36px;
+    }
+
+    #salads ul {
+        padding: 0px 200px;
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+    
+    #salads {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #salads .container {
+        width: 25%/*35%*/;
+        /*max-width: 400px;*/
+        padding: 0px;
+        margin: 25px;
+    }
+
+    #salads h3 .line,
+    #salads h4 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #salads .long-name br:nth-of-type(1){
+        display: inline-block;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+
+    #salads {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+/*-- ------------------------------------- -->
+<---  Appetizers, Sides, Wings, and Soups  -->
+<--- ------------------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+    #appetizers {
+        margin: 0px;
+    }
+
+    #appetizers .heading-br br {
+        display: none;
+    }
+
+    /*  Block Heading   */
+    #appetizers h2.heading {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 90px;
+        white-space: normal;
+        max-width: 450px;
+        overflow: hidden;
+        overflow-wrap: break-all;
+    }
+
+    /*#appetizers .hot-sandwiches h2:nth-of-type(1) {
+        height: 48px;
+        white-space: normal;
+        max-width: 450px;
+        overflow: hidden;
+        overflow-wrap: break-all;
+    }*/
+
+
+    /*  Line Subtitles  */
+    
+    #appetizers h2.subheading{
+        font-size: 26px;
+        margin: auto 3vw 36px;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        color: var(--primaryblack) ;
+        text-align: center;
+        height: 32px;/*48px;*/
+        white-space: nowrap;
+        max-width: 450px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #appetizers h2.subheading:before,
+    #appetizers h2.subheading:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #appetizers h2.subheading:before {
+        margin-left: -53%;
+        text-align: right;
+    }
+
+    #appetizers h2.subheading:after {
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    #appetizers .about {
+        text-align: center;
+        margin: auto 5vw;
+    }
+
+    #appetizers .container {
+        margin-bottom: 30px;
+    }
+
+    #appetizers h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    #appetizers .dinner-name {
+        width: 100%;
+    }
+
+    #appetizers h3 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #appetizers h3 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #appetizers h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    #appetizers h4 .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #appetizers h4 .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #appetizers p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+    #appetizers p.description {
+        text-align: center;
+        margin: 36px 15vw;
+    }
+
+    /*#appetizers p:nth-of-type(1) {
+        margin-bottom: 18px;
+    }*/
+
+    #appetizers .narrow-long-name br {
+        display: none;
+    }
+
+    #appetizers .long-name br {
+        display: inline-block;
+    }
+
+    #appetizers .bc br {
+        display: none;
+    }
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+    #appetizers .narrow-long-name br {
+        display: inline-block;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #appetizers .heading-br br {
+        display: inline-block;
+    }
+
+    #appetizers h2.subheading {
+        margin: auto auto 36px;
+    }
+
+    #appetizers h2.subheading-with-about {
+        margin-bottom: 18px;
+    }
+
+    
+    #appetizers .about {
+        text-align: center;
+        margin: auto 60px;
+    }
+
+    #appetizers p.description {
+        text-align: center;
+        margin: 36px 11vw;
+    }
+
+    #appetizers .appetizers-container {
+        margin: auto 50px;
+    }
+
+    #appetizers h3 .line {
+        max-width: 60vw;
+    }
+
+    #appetizers h4 .line {
+        max-width: 60vw;
+    }
+
+    #appetizers .long-name br{
+        display: none;
+    }
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+    #appetizers .heading-br br {
+        display: inline-block;
+    }
+
+    #appetizers h2.subheading {
+        margin: auto auto 36px;
+        width: 100%;
+    }
+
+    #appetizers p.description {
+        text-align: center;
+        margin: 36px 11vw;
+    }
+
+    #appetizers .appetizers-container {
+        margin: auto 50px;
+    }
+
+    #appetizers h3 .line {
+        max-width: 60vw;
+    }
+
+    #appetizers h4 .line {
+        max-width: 60vw;
+    }
+
+    #appetizers .apps-container,
+    #appetizers .wings-container,
+    #appetizers .potatoes-container,
+    #appetizers .soups-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #appetizers .container {
+        width: 47%;
+        margin: 25px 5px;
+        padding: auto 7px;
+        margin-bottom: /*30px*/;
+        max-width: 305px;
+    }
+
+    #appetizers p.description {
+        text-align: center;
+        margin: 18px 15vw;
+    }
+
+    #appetizers .apps-container .container:nth-of-type(11),
+    #appetizers .soups-container .container:nth-of-type(3) {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    #appetizers h3 .line {
+        min-width: 3vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #appetizers h4 .line {
+        min-width: 5vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #appetizers .smothered-fries {
+        margin-bottom: 0px;
+    }
+
+    #appetizers .narrow-long-name br {
+        display: inline-block;
+    }
+
+    #appetizers .long-name br{
+        display: inline-block;
+    }
+
+    #appetizers .bc br {
+        display: inline-block;
+    }
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #appetizers h2.subheading {
+        margin: auto auto 36px;
+        width: 100%;
+    }
+
+
+
+    #sandwiches .clubs-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: /*space-between*/space-around;
+        /*text-align: center;*/
+    }
+
+    #appetizers .apps-container,
+    #appetizers .wings-container,
+    #appetizers .potatoes-container,
+    #appetizers .soups-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: /*space-between*/space-around;
+        /*text-align: center;*/
+    }
+
+    #appetizers .container {
+        width: 47%;
+        margin: 25px 5px;
+        padding: auto 7px;
+        margin-bottom: /*30px*/;
+        max-width: 50%;/*305px;*/
+    }
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+
+    #appetizers {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    #appetizers .appetizers-container {
+        margin: auto 50px;
+    }
+
+    #appetizers .apps-container,
+    #appetizers .wings-container,
+    #appetizers .potatoes-container,
+    #appetizers .soups-container {
+        display: flex;
+
+        margin: auto 0px;
+        width: 100%;
+        height: fit-content;/*800px;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between/*space-around*/;
+        /*text-align: center;*/
+    }
+
+    #appetizers .container {
+        width: 25%/*47%*/;
+        margin: 25px/* 5px*/;
+        padding: 0px/*auto 7px*/;
+        /*margin-bottom: /*30px* /;*/
+        max-width: 305px;
+    }
+
+
+    #appetizers .apps-container .container:nth-of-type(11),
+    #appetizers .soups-container .container:nth-of-type(3) {
+        width: 25%;
+        margin: 25px;
+    }
+
+    #appetizers .spwf {
+        margin-bottom: 0;
+    }
+
+    #appetizers h3 .line,
+    #appetizers h4 .line {
+        min-width: 1vw;
+        max-width: 70vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+    #appetizers {
+        max-width: 1450px;
+        margin: auto;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---          Drinks            -->
+<--- -------------------------- -*/
+
+/*Phone*/
+@media only screen and (min-width: 0em) {
+
+
+    #drinks {
+        margin: 0px;
+    }
+
+    /*  Block Heading   */
+    #drinks h2 {
+        font-size: 36px;
+        margin: auto 10vw;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        background-color: var(--primary);
+        color: var(--bledwhitebright);
+        margin: auto;   /*  Wide Title Bar  */
+        margin-bottom: 36px;
+        text-align: center;
+        height: 48px;
+        white-space: nowrap;
+        max-width: 450px;  
+    }
+
+    /*#salads .about {
+        text-align: center;
+        margin: auto 5vw;
+    }*/
+
+    #drinks .container {
+        margin-bottom: 30px;
+    }
+
+    #drinks h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+
+    #drinks .subheading-container {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #drinks h3.subheading,
+    #drinks .sub-subheading {
+        font-size: 26px;
+        margin: auto 3vw 36px;  /*  Narrow Title Bar    */
+        border-radius: 3px;
+        color: var(--primaryblack) ;
+        text-align: center;
+        height: 32px;/*48px;*/
+        white-space: nowrap;
+        max-width: 450px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    #drinks h3.subheading:before,
+    #drinks h3.subheading:after,
+    #drinks .sub-subheading:before,
+    #drinks .sub-subheading:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    #drinks h3.subheading:before,
+    #drinks .sub-subheading:before {
+        margin-left: -53%;
+        text-align: right;
+    }
+
+    #drinks h3.subheading:after,
+    #drinks .sub-subheading:after {
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    #drinks .sub-subheading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #drinks .sub-subheading {
+        margin: auto 17vw 36px;
+    }
+
+    /*#drinks .sub-subheading:before,
+    #drinks .sub-subheading:after {
+        width: 12%/*48%* /;
+    }
+
+    #drinks .sub-subheading:before {
+        margin-left: -17%/*-53%* /;
+        text-align: right;
+    }*/
+
+
+
+
+    #drinks .dinner-name {
+        width: 100%;
+    }
+
+    #drinks h3 .line,
+    #drinks h4 .line,
+    #drinks h5 .line,
+    #drinks p .line {
+        min-width: 1vw;
+        max-width: 50vw;
+        width: 100vw;
+        display: inline-block;
+        border-bottom: 2px dashed var(--harvest);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #drinks h3 .price,
+    #drinks h4 .price,
+    #drinks h5 .price,
+    #drinks p .price {
+        color: var(--harvest);
+        font-weight: 700;
+    }
+
+    #drinks h4,
+    #drinks h5 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primaryblack);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;/*
+        margin-left: 25px;*/
+    }
+
+    #drinks p {
+        margin-bottom: 36px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /*max-width: 90%;*/
+    }
+
+    #drinks .na_malted,
+    #drinks .bottled_beer,
+    #drinks .draft_beer {
+        text-align: center;
+        margin: auto;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    #drinks .na_malted h5,
+    #drinks .bottled_beer h5,
+    #drinks .draft_beer h5 {
+        white-space: normal;
+        font-weight: 400;
+    }
+
+    #drinks .beverages {
+        text-align: center;
+        margin: auto;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    #drinks h5.bev {
+        white-space: normal;
+        font-weight: 400;
+    }    
+
+    #salads .long-name {
+        display: inline-block;
+    }
+
+    #drinks br.narrow-long-name {
+        display: none;
+    }
+
+
+
+}
+
+/* Narrow Phone */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Computer */
+@media only screen and (min-width: 81.25em) {
+
+}
+
+/* Large Computer */
+@media only screen and (min-width: 106.25em) {
+
+}
+
+
 
 /*-- -------------------------- -->
 <---            Menu            -->
@@ -366,6 +4173,10 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #menu .satisfaction {
+        display: none;
     }
 
     #menu .oven img {

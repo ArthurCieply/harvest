@@ -313,8 +313,6 @@ ul.line-nav-tabs li:nth-of-type(1):after {
 
 /*  Thin Wide Thin Window   */
 @media only screen and (min-width: 480px) and (max-width: 608px) {
-
-
     
     #services {
         max-height: 300px;

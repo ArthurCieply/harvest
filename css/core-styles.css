@@ -4,6 +4,21 @@
 
 @media screen and (min-width: 0px) {
 
+	:root {
+        --background: #fbfafa;
+        --harvest: hsl(0, 100%, 30%);
+		--primary: #b21414;
+        --primarybuttonhover: #961010;
+        --primarywhite: #f1e8e8;
+        --bledwhitebright: #f3dfdf;
+        --bledwhitedark: #e6d2d2;
+        --primaryblack: #292929;
+        --whitebuttonhover: #d6d2d2;
+        --footerwhite: hsl(0, 8%, 91%);
+        --herowhite: #e3e2e2;
+        --testimonialwhite: #fdf6f6;
+	}    
+
     section {
         padding: 50px 10px;
         margin-bottom: 5em;
@@ -30,21 +45,6 @@
 
     html {
 		scroll-behavior: smooth;
-	}
-	
-	:root {
-        --background: #fbfafa;
-        --harvest: hsl(0, 100%, 30%);
-		--primary: #b21414;
-        --primarybuttonhover: #961010;
-        --primarywhite: #f1e8e8;
-        --bledwhitebright: #f3dfdf;
-        --bledwhitedark: #e6d2d2;
-        --primaryblack: #292929;
-        --whitebuttonhover: #d6d2d2;
-        --footerwhite: hsl(0, 8%, 91%);
-        --herowhite: #e3e2e2;
-        --testimonialwhite: #fdf6f6;
 	}
 
     body, html {
