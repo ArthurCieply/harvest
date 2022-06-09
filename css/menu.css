@@ -3903,12 +3903,10 @@ ul.line-nav-tabs li:nth-of-type(3):after {
 /*Phone*/
 @media only screen and (min-width: 0em) {
 
-
     #drinks {
         margin: 0px;
     }
 
-    /*  Block Heading   */
     #drinks h2 {
         font-size: 36px;
         margin: auto 10vw;  /*  Narrow Title Bar    */
@@ -3923,16 +3921,13 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         max-width: 450px;  
     }
 
-    /*#salads .about {
-        text-align: center;
-        margin: auto 5vw;
-    }*/
-
     #drinks .container {
         margin-bottom: 30px;
     }
 
-    #drinks h3 {
+    #drinks h3,
+    #drinks h4,
+    #drinks h5 {
         font-size: 20px;
         font-weight: 700;
         color: var(--primaryblack);
@@ -3943,20 +3938,22 @@ ul.line-nav-tabs li:nth-of-type(3):after {
         white-space: nowrap;
     }
 
+    #drinks h3 {
+        font-size: 26px;
+    }
 
-    #drinks .subheading-container {
-        text-align: center;
-        margin: 0 auto;
+    #drinks h4 {
+        font-size: 22px;
     }
 
     #drinks h3.subheading,
     #drinks .sub-subheading {
-        font-size: 26px;
-        margin: auto 3vw 36px;  /*  Narrow Title Bar    */
+        /*font-size: 26px;*/
+        margin: auto 3vw 36px;
         border-radius: 3px;
         color: var(--primaryblack) ;
         text-align: center;
-        height: 32px;/*48px;*/
+        height: 32px;
         white-space: nowrap;
         max-width: 450px;
         position: relative;
@@ -3991,35 +3988,20 @@ ul.line-nav-tabs li:nth-of-type(3):after {
     }
 
     #drinks .sub-subheading {
-        font-size: 20px;
-        line-height: 30px;
+        max-width: 225px;
+        margin: 0 auto 36px;
     }
 
-    #drinks .sub-subheading {
-        margin: auto 17vw 36px;
+    #drinks h3.top-space {
+        margin-top: 36px;
     }
-
-    /*#drinks .sub-subheading:before,
-    #drinks .sub-subheading:after {
-        width: 12%/*48%* /;
-    }
-
-    #drinks .sub-subheading:before {
-        margin-left: -17%/*-53%* /;
-        text-align: right;
-    }*/
-
-
-
 
     #drinks .dinner-name {
         width: 100%;
     }
 
     #drinks h3 .line,
-    #drinks h4 .line,
-    #drinks h5 .line,
-    #drinks p .line {
+    #drinks h5 .line {
         min-width: 1vw;
         max-width: 50vw;
         width: 100vw;
@@ -4030,70 +4012,38 @@ ul.line-nav-tabs li:nth-of-type(3):after {
     }
 
     #drinks h3 .price,
-    #drinks h4 .price,
-    #drinks h5 .price,
-    #drinks p .price {
+    #drinks h5 .price {
         color: var(--harvest);
         font-weight: 700;
     }
 
-    #drinks h4,
-    #drinks h5 {
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--primaryblack);
-        margin-bottom: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        white-space: nowrap;/*
-        margin-left: 25px;*/
-    }
-
     #drinks p {
-        margin-bottom: 36px;
+        margin-bottom: 18px;
         margin-left: 25px;
         margin-right: 25px;
-        /*max-width: 90%;*/
     }
 
-    #drinks .na_malted,
-    #drinks .bottled_beer,
-    #drinks .draft_beer {
-        text-align: center;
-        margin: auto;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-
-    #drinks .na_malted h5,
-    #drinks .bottled_beer h5,
-    #drinks .draft_beer h5 {
+    #drinks h5.long-list {
         white-space: normal;
+        text-align: center;
         font-weight: 400;
     }
 
     #drinks .beverages {
+        position: relative;
         text-align: center;
-        margin: auto;
-        padding: 0 15px;
+        margin: 0 auto;
         margin-bottom: 30px;
     }
 
-    #drinks h5.bev {
-        white-space: normal;
-        font-weight: 400;
-    }    
+    #drinks .beverages .small-writing {
+        margin-bottom: 8px;
+    }
 
-    #salads .long-name {
+    #drinks .beverages .bev-price { 
         display: inline-block;
+        margin: 0 auto;
     }
-
-    #drinks br.narrow-long-name {
-        display: none;
-    }
-
-
 
 }
 
